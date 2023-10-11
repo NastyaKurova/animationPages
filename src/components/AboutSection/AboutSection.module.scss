@@ -1,0 +1,26 @@
+.container {
+  min-height: 100vh;
+  background-image: url('../../../public/dungeon.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--main-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.header {
+  text-transform: uppercase;
+  font-size: calc(var(--index) * 1.8);
+  letter-spacing: calc(var(--index) / 7.5);
+  transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+  will-change: transform;
+  transition: var(--transition);
+}
+.paragraph {
+  max-width: calc(var(--index) * 30);
+  font-size: calc(var(--index) * 0.9);
+  transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+  will-change: transform;
+  transition: var(--transition);
+}
