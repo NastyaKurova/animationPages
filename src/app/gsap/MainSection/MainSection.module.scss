@@ -1,13 +1,3 @@
-.scroll {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.scroll1 {
-  height: 100vh;
-}
 .container {
   position: relative;
   &::after {
@@ -16,7 +6,7 @@
     z-index: 100;
     width: 100%;
     height: calc(var(--index) * 10);
-    background-image: url('../../../public/ground.png');
+    background-image: url('../../../../public/ground.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,23 +32,18 @@
   will-change: transform;
 }
 .layerBase {
-  background-image: url('../../../public/layer-base.png');
-  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+  background-image: url('../../../../public/layer-base.png');
   z-index: 0;
 }
 .layerMiddle {
-  background-image: url('../../../public/layer-middle.png');
-  transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+  background-image: url('../../../../public/layer-middle.png');
 }
 .layerFront {
-  background-image: url('../../../public/layer-front.png');
-  transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
+  background-image: url('../../../../public/layer-front.png');
 }
 .header {
   z-index: 1;
-  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
   text-transform: uppercase;
-  will-change: transform;
   font-weight: 900;
   color: var(--main-text-color);
   text-shadow: 0 0 15px #9e7d35;
