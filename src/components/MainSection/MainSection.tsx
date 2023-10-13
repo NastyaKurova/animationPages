@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import classes from './MainSection.module.scss';
 import { FC } from 'react';
 import classNames from 'classnames';

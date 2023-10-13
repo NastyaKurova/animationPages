@@ -8,7 +8,10 @@ export default function AboutSection() {
     <Parallax parallaxElement={PARALLAX_ELEMENT}>
       <div className={classes.container}>
         <div className={classes.layer}>
-          <div className={classNames(classes.content, PARALLAX_ELEMENT)} data-depth="0.45">
+          <div
+            className={classNames(classes.content, PARALLAX_ELEMENT)}
+            data-depth="0.45"
+          >
             <h2 className={classes.header}>About Page</h2>
             <p className={classes.paragraph}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

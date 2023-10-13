@@ -2,8 +2,8 @@ import React from 'react';
 import { MainPage } from '@/components/MainPage/MainPage';
 import { MainSection } from './MainSection/MainSection';
 import { Metadata } from 'next';
-import AboutSection from "./AboutSection/AboutSection";
-
+import AboutSection from './AboutSection/AboutSection';
+import SubscriptionsSection from '@/app/gsap/SubscriptionsSection/SubscriptionsSection';
 
 export const metadata: Metadata = {
   title: 'Animation page',
@@ -14,6 +14,7 @@ export default function Page() {
     <MainPage>
       <MainSection />
       <AboutSection />
+      <SubscriptionsSection />
     </MainPage>
   );
 }

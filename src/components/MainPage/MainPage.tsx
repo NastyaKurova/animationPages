@@ -6,9 +6,7 @@ import SmoothScroll from '@/components/SmoothScroll/SmoothScroll';
 export const MainPage: FC<ReactChildrenType> = ({ children }) => {
   return (
     <main>
-      <SmoothScroll>
-        {children}
-      </SmoothScroll>
+      <SmoothScroll>{children}</SmoothScroll>
     </main>
   );
 };
