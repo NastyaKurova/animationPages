@@ -1,7 +1,7 @@
 This project contains animated pages. Native animation | Parallax | GSAP
 
-* `/` page contains native animations
-* `/gsap` contains GSAP animations
+* `/` page contains native animations https://nastyakurova.github.io/animationPages/
+* `/gsap` contains GSAP animations https://nastyakurova.github.io/animationPages/gsap
 
 
 ___
