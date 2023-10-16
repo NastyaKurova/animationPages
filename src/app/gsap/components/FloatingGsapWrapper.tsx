@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import { ReactChildrenType, RefElementType } from '@/types/commonTypes';
 import { gsap } from '@/gsap';
 
@@ -19,7 +19,7 @@ const FloatingWrapper = ({
   const easing = 0.08;
   const speed = 0.01;
 
-//The Linear Interpolation
+  //The Linear Interpolation
   const lerp = (start: number, target: number, amount: number) =>
     start * (1 - amount) + target * amount;
 
@@ -52,8 +52,8 @@ const FloatingWrapper = ({
     }
   };
 
-  const handleMouseMove = (e: MouseEvent) => {
-    const { movementX, movementY } = e;
+  const handleMouseMove = (event: MouseEvent<HTMLElement>) => {
+    const { movementX, movementY } = event;
 
     xForce += movementX * speed;
     yForce += movementY * speed;
