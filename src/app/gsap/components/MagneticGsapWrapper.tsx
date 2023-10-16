@@ -1,8 +1,8 @@
-import React, { RefObject, useEffect, useRef } from 'react';
-import { ReactChildrenType } from '@/types/commonTypes';
+import React, { useEffect, useRef } from 'react';
+import { ReactChildrenType, RefElementType } from '@/types/commonTypes';
 import { gsap } from '@/gsap';
 const MagneticGsapWrapper = ({ children }: ReactChildrenType) => {
-  const magneticRef: RefObject<HTMLInputElement> = useRef(null);
+  const magneticRef: RefElementType = useRef(null);
 
   useEffect(() => {
     const xTo = gsap.quickTo(magneticRef.current, 'x', {

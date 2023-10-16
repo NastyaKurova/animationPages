@@ -1,6 +1,6 @@
 'use client';
 import classes from './AboutSection.module.scss';
-import { Parallax } from '@/components/Parallax/Parallax';
+import { Parallax } from '@/app/gsap/components/Parallax';
 import classNames from 'classnames';
 const PARALLAX_ELEMENT = 'parallax-about';
 export default function AboutSection() {

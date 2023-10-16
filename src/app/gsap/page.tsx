@@ -4,6 +4,7 @@ import { MainSection } from './MainSection/MainSection';
 import { Metadata } from 'next';
 import AboutSection from './AboutSection/AboutSection';
 import SubscriptionsSection from '@/app/gsap/SubscriptionsSection/SubscriptionsSection';
+import FloatingGallery from "@/app/gsap/FloatingGallery/FloatingGallery";
 
 export const metadata: Metadata = {
   title: 'Animation page',
@@ -14,6 +15,7 @@ export default function Page() {
     <MainPage>
       <MainSection />
       <AboutSection />
+      <FloatingGallery />
       <SubscriptionsSection />
     </MainPage>
   );

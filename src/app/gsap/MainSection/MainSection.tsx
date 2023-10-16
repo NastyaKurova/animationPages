@@ -3,7 +3,7 @@ import classes from './MainSection.module.scss';
 import React, { FC, useRef } from 'react';
 import classNames from 'classnames';
 import { useColor } from '@/hooks/useColor';
-import { Parallax } from '@/components/Parallax/Parallax';
+import { Parallax } from '@/app/gsap/components/Parallax';
 const PARALLAX_ELEMENT = 'parallax';
 export const MainSection: FC = () => {
   const forestRef = useRef(null);

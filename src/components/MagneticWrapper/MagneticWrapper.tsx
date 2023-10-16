@@ -1,8 +1,8 @@
-import React, { RefObject, useEffect, useRef, useState } from 'react';
-import { ReactChildrenType } from '@/types/commonTypes';
+import React, { useEffect, useRef, useState } from 'react';
+import { ReactChildrenType, RefElementType } from '@/types/commonTypes';
 
 const MagneticGsapWrapper = ({ children }: ReactChildrenType) => {
-  const magneticRef: RefObject<HTMLInputElement> = useRef(null);
+  const magneticRef: RefElementType = useRef(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const prevPositionRef = useRef({ x: 0, y: 0 });
 
